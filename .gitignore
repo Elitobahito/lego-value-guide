@@ -1,0 +1,7 @@
+*.py
+__pycache__/
+artifact.html
+blog/articles/
+*.log
+.DS_Store
+.playwright-mcp/

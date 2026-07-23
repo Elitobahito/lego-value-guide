@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lego-value-guide.com/sitemap.xml

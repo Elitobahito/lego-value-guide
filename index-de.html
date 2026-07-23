@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Beste LEGO-Wert-Tools 2026 — Was ist dein Set wert?</title>
+<meta name="description" content="Wir haben die 6 besten Tools getestet, um den echten Wert deiner LEGO-Sets zu finden. Echte Preise, Portfolio & Wert-Tracker — Ranking 2026.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='14' cy='6.5' r='3.4' fill='%23FFCE00' stroke='%2315181E' stroke-width='2.6'/%3E%3Ccircle cx='26' cy='6.5' r='3.4' fill='%23FFCE00' stroke='%2315181E' stroke-width='2.6'/%3E%3Crect x='5' y='11' width='30' height='24' rx='6' fill='%23FFCE00' stroke='%2315181E' stroke-width='2.6'/%3E%3Cpath d='M13 23.5l4.5 4.5L28 17.5' fill='none' stroke='%2315181E' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F7F9; --panel:#FFFFFF; --ink:#15181E; --slate:#5A6270; --line:#E4E7EC;
+  --red:#D01012; --red-d:#A50D0F; --gold:#FFCE00; --blue:#0057A6; --green:#00A94F;
+  --disp:'Fredoka','Baloo 2',system-ui,sans-serif;
+  --body:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --sh:0 2px 4px rgba(21,24,30,.05),0 10px 26px rgba(21,24,30,.07);
+  --sh-lg:0 4px 8px rgba(21,24,30,.06),0 22px 50px rgba(21,24,30,.12);
+  --maxw:1080px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 22px}
+h1,h2,h3,.disp{font-family:var(--disp);font-weight:700;line-height:1.08;text-wrap:balance;letter-spacing:-.01em}
+a{color:inherit}
+img{max-width:100%}
+
+/* ---- header ---- */
+header{position:sticky;top:0;z-index:50;background:rgba(246,247,249,.82);backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:11px;font-family:var(--disp);font-weight:600;font-size:19px;letter-spacing:-.01em;text-decoration:none}
+.brand .logo-mark{display:inline-flex;transform:rotate(-4deg)}
+.brand .logo-mark svg{width:34px;height:34px;filter:drop-shadow(2px 2px 0 rgba(21,24,30,.14))}
+.brand .logo-txt b{font-weight:700;color:var(--red)}
+.nav .yr{font-size:12.5px;font-weight:600;color:var(--slate);border:1.5px solid var(--line);border-radius:999px;padding:5px 11px;background:var(--panel)}
+
+/* ---- hero ---- */
+.hero{padding:66px 0 36px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-40px 0 auto;height:420px;z-index:0;
+  background-image:radial-gradient(rgba(21,24,30,.07) 1.7px,transparent 1.8px);background-size:26px 26px;
+  -webkit-mask:radial-gradient(120% 78% at 50% -8%,#000 35%,transparent 72%);mask:radial-gradient(120% 78% at 50% -8%,#000 35%,transparent 72%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--red-d);background:#fff;border:1.5px solid var(--line);padding:6px 13px;border-radius:999px;box-shadow:var(--sh)}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(0,169,79,.18)}
+.hero h1{font-size:clamp(32px,6vw,58px);margin:20px auto 0;max-width:16ch}
+.hero h1 .hl{color:var(--red);position:relative;white-space:nowrap}
+.hero p.sub{font-size:clamp(16.5px,2.2vw,20px);color:var(--slate);max-width:56ch;margin:18px auto 0;text-wrap:balance}
+.meta-row{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:center;align-items:center;margin-top:26px;font-size:13.5px;font-weight:600;color:var(--slate)}
+.meta-row span{display:inline-flex;align-items:center;gap:7px}
+.meta-row svg{width:16px;height:16px;color:var(--green)}
+
+/* ---- ranking cards ---- */
+.section{padding:40px 0}
+.rank-list{display:flex;flex-direction:column;gap:22px;margin-top:8px}
+.card{position:relative;background:var(--panel);border:1.5px solid var(--line);border-radius:20px;box-shadow:var(--sh);padding:26px 26px 24px;display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:start;transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translateY(-3px);box-shadow:var(--sh-lg)}
+.card.top{border:2.5px solid var(--gold);background:linear-gradient(180deg,#FFFCF0,#fff 42%);box-shadow:0 6px 16px rgba(255,206,0,.22),var(--sh-lg)}
+.card.top .medal.g{box-shadow:0 5px 15px rgba(255,196,0,.55)}
+.choice{position:absolute;top:-13px;left:26px;background:var(--ink);color:#fff;font-family:var(--disp);font-weight:700;font-size:12.5px;letter-spacing:.04em;padding:5px 13px;border-radius:999px;display:inline-flex;align-items:center;gap:7px}
+.choice svg{width:14px;height:14px;color:var(--gold)}
+.medal{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-weight:700;font-size:22px;color:var(--ink);border:0;box-shadow:0 4px 10px rgba(21,24,30,.14);flex-shrink:0}
+.medal.g{background:linear-gradient(145deg,#FFE485,#FFC400)}.medal.s{background:linear-gradient(145deg,#F2F5F9,#D6DCE4)}.medal.b{background:linear-gradient(145deg,#F4CFA3,#E39F62)}
+.medal.n{background:#fff;border:1.5px solid var(--line);font-size:19px;color:var(--slate);box-shadow:0 2px 6px rgba(21,24,30,.07)}
+.c-body{min-width:0}
+.c-top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.c-logo{width:46px;height:46px;border-radius:11px;background:#fff;border:1px solid var(--line);padding:6px;object-fit:contain;flex-shrink:0;box-shadow:0 1px 2px rgba(21,24,30,.06)}
+.c-name{font-family:var(--disp);font-weight:700;font-size:22px}
+.bestfor{font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:var(--blue);background:rgba(0,87,166,.09);padding:4px 10px;border-radius:999px}
+.tagline{color:var(--slate);margin-top:9px;font-size:15.5px}
+.c-shot{display:block;width:100%;height:172px;object-fit:cover;object-position:top center;border-radius:11px;border:1px solid var(--line);background:#EEF1F4;box-shadow:0 1px 4px rgba(21,24,30,.10)}
+.c-shot:hover{box-shadow:0 6px 16px rgba(21,24,30,.14)}
+.plist{list-style:none;display:grid;gap:7px;margin-top:14px}
+.plist li{display:flex;gap:9px;align-items:flex-start;font-size:14.5px;font-weight:500;line-height:1.45}
+.plist svg{width:17px;height:17px;flex-shrink:0;margin-top:2px}
+.plist .pro svg{color:var(--green)}
+.plist .con{color:var(--slate)}.plist .con svg{color:#B9BEC7}
+.c-right{display:flex;flex-direction:column;align-items:stretch;gap:9px;flex-shrink:0;width:296px;text-align:center;background:linear-gradient(180deg,#FBFCFD,#F2F5F8);border:1px solid var(--line);border-radius:16px;padding:13px 13px 15px}
+.c-right .btn{width:100%;justify-content:center;margin-top:3px}
+.card.top .c-right{border-color:#F1D688;background:linear-gradient(180deg,#FFFDF5,#FBF1D4)}
+.verdict-lbl{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);margin-top:2px}
+.score{font-family:var(--disp);font-weight:700;font-size:33px;line-height:1;font-variant-numeric:tabular-nums;text-align:center;margin-top:2px}
+.score small{font-size:14px;color:var(--slate);font-weight:600}
+.stars{display:inline-flex;gap:2px;justify-content:center}
+.stars svg{width:16px;height:16px;color:var(--gold)}
+.stars .off{color:#DfE3E8}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--body);font-weight:700;font-size:15px;padding:13px 22px;border-radius:999px;border:0;cursor:pointer;text-decoration:none;white-space:nowrap;transition:transform .14s ease,box-shadow .14s ease}
+.btn.primary{background:linear-gradient(180deg,#1FBE6B,#14A257);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 10px 22px -8px rgba(18,155,80,.75)}
+.btn.primary:hover{transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 15px 30px -8px rgba(18,155,80,.85)}
+.btn.ghost{background:#fff;color:#0B7D3E;font-size:14.5px;font-weight:700;padding:12px 20px;border:1.6px solid #BFE6CE;box-shadow:0 1px 2px rgba(21,24,30,.05)}
+.btn.ghost:hover{background:#F1FBF5;border-color:#12A150;transform:translateY(-1px)}
+.btn svg{width:16px;height:16px}
+
+/* ---- comparison table ---- */
+.tbl-head{text-align:center;max-width:60ch;margin:0 auto}
+.tbl-head h2{font-size:clamp(26px,4vw,38px)}
+.tbl-head p{color:var(--slate);margin-top:12px}
+.tbl-scroll{overflow-x:auto;margin-top:30px;border:1.5px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--sh)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:14.5px}
+th,td{padding:15px 16px;text-align:center;border-bottom:1px solid var(--line)}
+thead th{font-family:var(--disp);font-weight:600;color:var(--slate);font-size:13.5px;background:#FAFBFC;position:sticky;top:0}
+thead th.us{background:var(--ink);color:#fff;font-size:15px}
+th:first-child,td:first-child{text-align:left;font-weight:600;min-width:210px;color:var(--ink)}
+tbody tr:last-child td{border-bottom:0}
+td.us{background:rgba(208,16,18,.05)}
+.ck{color:var(--green)}.cx{color:#C7CCD4}.cm{color:var(--slate);font-weight:700}
+.tbl-note{text-align:center;color:var(--slate);font-size:12.5px;margin-top:12px;display:none}
+
+/* ---- how we ranked ---- */
+.crit{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.crit .c{background:#fff;border:1.5px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--sh)}
+.crit .ic{width:42px;height:42px;border-radius:11px;background:var(--bg);border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.crit .ic svg{width:22px;height:22px;color:var(--ink)}
+.crit h3{font-size:18px}
+.crit p{color:var(--slate);font-size:14.5px;margin-top:7px}
+
+/* ---- final CTA ---- */
+.final{background:var(--ink);color:#fff;border-radius:24px;padding:44px 34px;text-align:center;margin:8px 0}
+.final h2{font-size:clamp(26px,4vw,38px);color:#fff}
+.final p{color:#C4C9D2;max-width:52ch;margin:14px auto 24px}
+.final .btn.primary{background:var(--gold);color:var(--ink);font-size:16.5px;padding:16px 30px;box-shadow:0 12px 28px -6px rgba(0,0,0,.55)}
+
+/* ---- faq ---- */
+.faq{max-width:760px;margin:0 auto}
+details{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:2px 20px;margin-bottom:12px}
+summary{font-family:var(--disp);font-weight:600;font-size:17px;cursor:pointer;padding:16px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:24px;color:var(--slate);font-weight:400;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--slate);font-size:15px;padding:0 0 18px;line-height:1.6}
+
+/* ---- footer ---- */
+footer{border-top:1px solid var(--line);margin-top:40px;padding:30px 0 50px;color:var(--slate);font-size:13px;text-align:center}
+footer .disc{max-width:70ch;margin:0 auto 12px;line-height:1.6}
+footer a{color:var(--red-d);font-weight:600;text-decoration:none}
+.langsel{display:flex;flex-wrap:wrap;gap:7px 8px;justify-content:center;max-width:640px;margin:0 auto 22px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.langsel a{font-size:13px;font-weight:600;color:var(--slate);text-decoration:none;padding:6px 13px;border-radius:999px;border:1.5px solid var(--line);background:#fff;transition:all .14s ease}
+.langsel a:hover{border-color:#CFD5DC;color:var(--ink)}
+.langsel a.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+.sec-eyebrow{text-align:center;font-family:var(--disp);font-weight:600;color:var(--red-d);font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+@media(max-width:720px){
+  .card{grid-template-columns:auto 1fr;gap:16px}
+  .c-right{grid-column:1 / -1;width:auto;flex-direction:column;align-items:stretch;text-align:center;margin-top:4px}
+  .c-right .btn{order:3}
+  .medal{width:46px;height:46px;font-size:20px}
+  .tbl-note{display:block}
+  .crit{grid-template-columns:1fr}
+  .hero{padding:44px 0 26px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><span class="logo-mark"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="14" cy="6.5" r="3.4" fill="#FFCE00" stroke="#15181E" stroke-width="2.6"/><circle cx="26" cy="6.5" r="3.4" fill="#FFCE00" stroke="#15181E" stroke-width="2.6"/><rect x="5" y="11" width="30" height="24" rx="6" fill="#FFCE00" stroke="#15181E" stroke-width="2.6"/><path d="M13 23.5l4.5 4.5L28 17.5" stroke="#15181E" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="logo-txt">LEGO&nbsp;Value <b>Guide</b></span></a>
+    <span class="yr">Ausgabe 2026 · monatlich aktualisiert</span>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Was ist dein LEGO® wirklich wert? Wir haben die <span class="hl">Tools getestet, die es dir verraten</span>.</h1>
+    <p class="sub">Preis-Checker, Wertratgeber und Portfolio-Tracker versprechen alle, den Wert deiner Sets zu enthüllen — doch die meisten zeigen nur Angebotspreise oder Schätzungen. Wir haben die 6 gerankt, die dir wirklich helfen, vor dem Verkauf zu entscheiden.</p>
+    <div class="meta-row">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>6 Tools praxisnah getestet</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Genauigkeit anhand echter Verkaufspreise geprüft</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Zuletzt aktualisiert: Juli 2026</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:16px">
+  <div class="wrap">
+    <div class="rank-list">
+
+      <!-- #1 BrickGains -->
+      <article class="card top">
+        <div class="choice"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Empfehlung der Redaktion</div>
+        <div class="medal g">1</div>
+        <div class="c-body">
+          <div class="c-top">
+            <img class="c-logo" src="logos/brickgains.png" alt="BrickGains logo" loading="lazy">
+            <span class="c-name">BrickGains</span>
+            <span class="bestfor">Ideal für Verkäufer &amp; Investoren</span>
+          </div>
+          <p class="tagline">Das einzige Tool, das sich danach richtet, wofür Sets <em>tatsächlich verkauft wurden</em> — nicht nach Angebotspreisen oder Prognosen. Füge deine Sammlung hinzu, sieh ihren Live-Wert und deinen ROI und erhalte eine Benachrichtigung, wenn der richtige Zeitpunkt zum Verkaufen gekommen ist.</p>
+          <ul class="plist">
+            <li class="pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Echte BrickLink-Verkaufspreise — der Betrag, den Käufer wirklich zahlen</li>
+            <li class="pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Portfolio mit Live-Wert, ROI und Kaufen/Halten/Verkaufen-Empfehlung</li>
+            <li class="pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Wert in deinem eigenen Land &amp; deiner Währung, in 8 Sprachen</li>
+            <li class="con"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Neuerer Name — kleinere Community als die Platzhirsche</li>
+          </ul>
+        </div>
+        <div class="c-right">
+          <img class="c-shot" src="shots/brickgains.png" alt="brickgains homepage screenshot" loading="lazy" width="470" height="152">
+          <div class="score">4,9<small>/5</small></div>
+          <div class="stars" aria-label="4,9 von 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </div>
+          <a class="btn primary" href="https://brickgains.com/?utm_source=brickindex&amp;utm_medium=referral&amp;utm_campaign=ranking2026" target="_blank" rel="noopener">Set kostenlos prüfen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </article>
+
+      <!-- #2 BrickEconomy -->
+      <article class="card">
+        <div class="medal s">2</div>
+        <div class="c-body">
+          <div class="c-top">
+            <img class="c-logo" src="logos/brickeconomy.png" alt="BrickEconomy logo" loading="lazy">
+            <span class="c-name">BrickEconomy</span>
+            <span class="bestfor">Ideal für Prognosen &amp; Datentiefe</span>
+          </div>
+          <p class="tagline">Das Daten-Schwergewicht der LEGO-Welt: Werte, Wachstumskurven und KI-prognostizierte Zukunftspreise über einen riesigen Katalog. Leistungsstark — wenn du die Informationsdichte verkraftest.</p>
+          <ul class="plist">
+            <li class="pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Riesiger Katalog mit historischen Werttrends</li>
+            <li class="pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Sammlungsverwaltung und Prognose-Schätzungen</li>
+            <li class="con"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Prognosen sind Vorhersagen, die du nicht überprüfen kannst</li>
+            <li class="con"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Überladene Oberfläche; die besten Funktionen sind kostenpflichtig</li>
+          </ul>
+        </div>
+        <div class="c-right">
+          <img class="c-shot" src="shots/brickeconomy.png" alt="brickeconomy homepage screenshot" loading="lazy" width="470" height="152">
+          <div class="score">4,4<small>/5</small></div>
+          <div class="stars" aria-label="4,4 von 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg class="off" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </div>
+          <a class="btn ghost" href="https://www.brickeconomy.com/" target="_blank" rel="noopener nofollow">Zur Website</a>
+        </div>
+      </article>
+
+      <!-- #3 BrickLink Price Guide -->
+      <article class="card">
+        <div class="medal b">3</div>
+        <div class="c-body">
+          <div class="c-top">
+            <img class="c-logo" src="logos/bricklink.png" alt="BrickLink logo" loading="lazy">
+            <span class="c-name">BrickLink Price Guide</span>
+            <span class="bestfor">Ideal für rohe Marktplatzdaten</span>
+          </div>
+          <p class="tagline">Der Preisführer im größten LEGO-Marktplatz der Welt. Die zugrunde liegenden Daten sind hervorragend — aber er ist für Händler gemacht, nicht für jemanden, der einfach nur eine klare Zahl möchte.</p>
+          <ul class="plist">
+            <li class="pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Direkt aus echten Marktplatz-Transaktionen</li>
+            <li class="pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Kostenlos und äußerst detailliert</li>
+            <li class="con"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Mischt Angebots- &amp; Verkaufspreise; steile Lernkurve</li>
+            <li class="con"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Kein Portfolio, kein ROI, keine Verkaufs-Benachrichtigungen</li>
+          </ul>
+        </div>
+        <div class="c-right">
+          <img class="c-shot" src="shots/bricklink.png" alt="bricklink homepage screenshot" loading="lazy" width="470" height="152">
+          <div class="score">4,0<small>/5</small></div>
+          <div class="stars" aria-label="4 von 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg class="off" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </div>
+          <a class="btn ghost" href="https://www.bricklink.com/catalogPG.asp" target="_blank" rel="noopener nofollow">Zur Website</a>
+        </div>
+      </article>
+
+      <!-- #4 Brickset -->
+      <article class="card">
+        <div class="medal n">4</div>
+        <div class="c-body">
+          <div class="c-top">
+            <img class="c-logo" src="logos/brickset.png" alt="Brickset logo" loading="lazy">
+            <span class="c-name">Brickset</span>
+            <span class="bestfor">Ideal zum Katalogisieren einer Sammlung</span>
+          </div>
+          <p class="tagline">Eine beliebte Community-Datenbank. Hervorragend, um jedes Set festzuhalten, das du besitzt, und Rezensionen zu lesen — die Wertverfolgung ist zwar dabei, aber nur eine Nebenfunktion, nicht der Kern.</p>
+          <ul class="plist">
+            <li class="pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Übersichtlicher Katalog, Rezensionen und eine große Community</li>
+            <li class="pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Kostenlose Sammlungsverwaltung</li>
+            <li class="con"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Wertdaten sind zweitrangig und weniger präzise</li>
+            <li class="con"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Kein Fokus auf Verkaufszeitpunkt oder ROI</li>
+          </ul>
+        </div>
+        <div class="c-right">
+          <img class="c-shot" src="shots/brickset.png" alt="brickset homepage screenshot" loading="lazy" width="470" height="152">
+          <div class="score">3,9<small>/5</small></div>
+          <div class="stars" aria-label="3,9 von 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg class="off" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </div>
+          <a class="btn ghost" href="https://brickset.com/" target="_blank" rel="noopener nofollow">Zur Website</a>
+        </div>
+      </article>
+
+      <!-- #5 BrickPicker -->
+      <article class="card">
+        <div class="medal n">5</div>
+        <div class="c-body">
+          <div class="c-top">
+            <img class="c-logo" src="logos/brickpicker.png" alt="BrickPicker logo" loading="lazy">
+            <span class="c-name">BrickPicker</span>
+            <span class="bestfor">Ideal für US-Sammlerforen</span>
+          </div>
+          <p class="tagline">Eine der ursprünglichen LEGO-Investment-Communities, mit Preisführer und aktiven, US-lastigen Foren. Großartiges Wissen — nur die Technik merkt man ihr Alter an.</p>
+          <ul class="plist">
+            <li class="pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Tiefes Community-Wissen und Investment-Know-how</li>
+            <li class="con"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Veraltete Oberfläche, überwiegend US-Preise</li>
+            <li class="con"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Kein Live-Portfolio, keine Verkaufs-Benachrichtigungen</li>
+          </ul>
+        </div>
+        <div class="c-right">
+          <img class="c-shot" src="shots/brickpicker.png" alt="brickpicker homepage screenshot" loading="lazy" width="470" height="152">
+          <div class="score">3,4<small>/5</small></div>
+          <div class="stars" aria-label="3,4 von 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg class="off" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg class="off" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </div>
+          <a class="btn ghost" href="https://www.brickpicker.com/" target="_blank" rel="noopener nofollow">Zur Website</a>
+        </div>
+      </article>
+
+      <!-- #6 Rebrickable -->
+      <article class="card">
+        <div class="medal n">6</div>
+        <div class="c-body">
+          <div class="c-top">
+            <img class="c-logo" src="logos/rebrickable.png" alt="Rebrickable logo" loading="lazy">
+            <span class="c-name">Rebrickable</span>
+            <span class="bestfor">Ideal für Teile &amp; MOC-Builder</span>
+          </div>
+          <p class="tagline">Die erste Wahl für Teile, Inventare und Eigenkreationen (MOCs). Du kannst besessene Sets erfassen, aber es ist nicht dafür gemacht, dir zu sagen, was sie wert sind oder wann du verkaufen solltest.</p>
+          <ul class="plist">
+            <li class="pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Unschlagbar bei Teilen und Bau-Ideen</li>
+            <li class="con"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Kein Wert- oder Investment-Tool</li>
+            <li class="con"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Wert nur über Drittanbieter-Erweiterungen</li>
+          </ul>
+        </div>
+        <div class="c-right">
+          <img class="c-shot" src="shots/rebrickable.png" alt="rebrickable homepage screenshot" loading="lazy" width="470" height="152">
+          <div class="score">3,6<small>/5</small></div>
+          <div class="stars" aria-label="3,6 von 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" class="off"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg class="off" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </div>
+          <a class="btn ghost" href="https://rebrickable.com/" target="_blank" rel="noopener nofollow">Zur Website</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="tbl-head">
+      <div class="sec-eyebrow">Direkter Vergleich</div>
+      <h2>Die Funktionen, die über einen Verkauf entscheiden</h2>
+      <p>Was dir jedes Tool bietet, wenn du wirklich wissen willst, was ein Set wert ist und wann du es abgeben solltest.</p>
+    </div>
+    <div class="tbl-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Funktion</th>
+            <th class="us">BrickGains</th>
+            <th>BrickEconomy</th>
+            <th>BrickLink</th>
+            <th>Brickset</th>
+            <th>BrickPicker</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Echte Verkaufspreise (keine Angebotspreise)</td><td class="us"><span class="ck">✓</span></td><td><span class="cx">✕</span></td><td><span class="cm">~</span></td><td><span class="cx">✕</span></td><td><span class="cm">~</span></td></tr>
+          <tr><td>Wert in deinem Land &amp; deiner Währung</td><td class="us"><span class="ck">✓</span></td><td><span class="cx">✕</span></td><td><span class="cx">✕</span></td><td><span class="cx">✕</span></td><td><span class="cx">✕</span></td></tr>
+          <tr><td>Portfolio mit Live-ROI</td><td class="us"><span class="ck">✓</span></td><td><span class="cm">~</span></td><td><span class="cx">✕</span></td><td><span class="cm">~</span></td><td><span class="cx">✕</span></td></tr>
+          <tr><td>Kaufen / Halten / Verkaufen-Empfehlungen</td><td class="us"><span class="ck">✓</span></td><td><span class="cx">✕</span></td><td><span class="cx">✕</span></td><td><span class="cx">✕</span></td><td><span class="cx">✕</span></td></tr>
+          <tr><td>Preis- &amp; Retirement-Benachrichtigungen</td><td class="us"><span class="ck">✓</span></td><td><span class="cm">~</span></td><td><span class="cx">✕</span></td><td><span class="cx">✕</span></td><td><span class="cx">✕</span></td></tr>
+          <tr><td>Einfach genug für Nicht-Experten</td><td class="us"><span class="ck">✓</span></td><td><span class="cx">✕</span></td><td><span class="cx">✕</span></td><td><span class="cm">~</span></td><td><span class="cx">✕</span></td></tr>
+          <tr><td>Kostenloser Einstieg</td><td class="us"><span class="ck">✓</span></td><td><span class="cm">~</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td><td><span class="ck">✓</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tbl-note">← Tabelle seitlich scrollen →</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="tbl-head">
+      <div class="sec-eyebrow">Unsere Methode</div>
+      <h2>So haben wir bewertet</h2>
+    </div>
+    <div class="crit">
+      <div class="c">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></div>
+        <h3>Genauigkeit zuerst</h3>
+        <p>Wir haben die Zahlen jedes Tools mit echten abgeschlossenen Verkäufen auf BrickLink und eBay verglichen. Angebotspreise und nicht überprüfbare Prognosen wurden schlechter bewertet.</p>
+      </div>
+      <div class="c">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>Zum Entscheiden gemacht</h3>
+        <p>Ein wirklich nützliches Tool zeigt nicht nur eine Zahl — es hilft dir bei der Entscheidung, zu halten oder zu verkaufen. Portfolios, ROI und Benachrichtigungen brachten Punkte.</p>
+      </div>
+      <div class="c">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
+        <h3>Mühelos für alle</h3>
+        <p>Die meisten Menschen sind keine Datenanalysten. Tools, die in Sekunden eine klare Antwort lieferten — auch mobil — landeten vor dem Experten-Labyrinth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="final">
+      <h2>Unser Platz 1: BrickGains kostenlos testen</h2>
+      <p>Prüfe den echten Wiederverkaufswert jedes Sets in Sekunden — für den Start ist kein Konto nötig. Sieh, was deine Sammlung heute wert ist, und verkaufe nie wieder ein Set zu billig.</p>
+      <a class="btn primary" href="https://brickgains.com/?utm_source=brickindex&amp;utm_medium=referral&amp;utm_campaign=ranking2026_footer" target="_blank" rel="noopener">Prüfen, was dein LEGO wert ist <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap faq">
+    <div class="tbl-head" style="margin-bottom:26px">
+      <div class="sec-eyebrow">Gut zu wissen</div>
+      <h2>Häufige Fragen</h2>
+    </div>
+    <details open><summary>Was ist das beste kostenlose Tool, um LEGO-Sets zu bewerten?</summary><p>Für eine klare, echte Zahl in Sekunden setzen wir <strong>BrickGains</strong> auf Platz 1 — der Einstieg ist kostenlos und es zeigt, wofür Sets tatsächlich verkauft wurden. Der Preisführer von BrickLink ist ebenfalls kostenlos, aber für Händler gemacht und vermischt Angebots- mit Verkaufspreisen.</p></details>
+    <details><summary>Warum nicht einfach BrickLink oder BrickEconomy nutzen?</summary><p>BrickLink hat großartige Rohdaten, aber kein Portfolio, keinen ROI und keinen Verkaufszeitpunkt — und man liest schnell versehentlich einen <em>Angebots</em>preis. BrickEconomy setzt auf KI-Prognosen, die du nicht überprüfen kannst. BrickGains konzentriert sich auf die Zahl, die beim Verkauf zählt: das, was Käufer wirklich bezahlt haben.</p></details>
+    <details><summary>Sind das die Preise, die ich beim Verkauf tatsächlich bekomme?</summary><p>Tools mit echten Verkaufspreisen (wie unser Testsieger) kommen am nächsten heran, weil sie auf abgeschlossenen Transaktionen basieren. Der Endpreis hängt trotzdem von Zustand, Vollständigkeit und Marktplatzgebühren ab — kalkuliere diese immer ein, bevor du inserierst.</p></details>
+    <details><summary>Wie oft wird dieses Ranking aktualisiert?</summary><p>Wir testen die Tools erneut und aktualisieren diese Seite monatlich. Zuletzt aktualisiert im Juli 2026.</p></details>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+        <nav class="langsel" aria-label="Language">
+      <a href="index.html">English</a>
+      <a href="index-fr.html">Français</a>
+      <a href="index-de.html" class="on">Deutsch</a>
+      <a href="index-es.html">Español</a>
+      <a href="index-it.html">Italiano</a>
+      <a href="index-nl.html">Nederlands</a>
+      <a href="index-sv.html">Svenska</a>
+      <a href="index-da.html">Dansk</a>
+    </nav>
+<p class="disc">LEGO Value Guide ist eine unabhängige Vergleichsseite. Wir testen die Tools selbst und bewerten sie nach Genauigkeit, Nützlichkeit und Benutzerfreundlichkeit. Einige Links können Empfehlungslinks sein, was jedoch niemals unser Ranking oder unsere Bewertungen beeinflusst. LEGO® ist eine Marke der LEGO Gruppe, die diese Seite weder sponsert noch autorisiert oder unterstützt.</p>
+    <p>© 2026 LEGO Value Guide · <a href="https://brickgains.com/?utm_source=brickindex&amp;utm_medium=referral&amp;utm_campaign=footer" target="_blank" rel="noopener">Unser Platz 1 →</a> · <a href="blog/index-de.html">Blog</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
